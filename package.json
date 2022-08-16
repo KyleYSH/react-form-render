@@ -1,0 +1,54 @@
+{
+  "name": "react-form-render",
+  "version": "0.1.12",
+  "description": "schema base form rendering",
+  "main": "./dist/index.ts",
+  "module": "./dist/index.esm.js",
+  "repository": "https://github.com/KyleYSH/react-form-render.git",
+  "author": "Kyle Yiu <kakalyiu.2012@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "sonarlint --src 'src/** --tests 'test/**'",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "build": "rollup -c",
+    "publish": "npm publish --access public"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.10",
+    "@babel/preset-react": "^7.18.6",
+    "@rollup/plugin-babel": "^5.3.1",
+    "@rollup/plugin-commonjs": "^22.0.2",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-typescript": "^8.3.4",
+    "@storybook/addon-actions": "^6.5.10",
+    "@storybook/addon-essentials": "^6.5.10",
+    "@storybook/addon-interactions": "^6.5.10",
+    "@storybook/addon-links": "^6.5.10",
+    "@storybook/builder-webpack4": "^6.5.10",
+    "@storybook/manager-webpack4": "^6.5.10",
+    "@storybook/react": "^6.5.10",
+    "@storybook/testing-library": "^0.0.13",
+    "@types/react": "^18.0.17",
+    "@types/rollup-plugin-peer-deps-external": "^2.2.1",
+    "babel-loader": "^8.2.5",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "require-from-string": "^2.0.2",
+    "rollup": "^2.78.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "sonarlint": "^1.1.0",
+    "typescript": "^4.7.4",
+    "webpack": "^5.74.0"
+  },
+  "engines": {
+    "npm": "No npm support",
+    "yarn": ">= 1.22.15"
+  }
+}
