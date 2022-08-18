@@ -23,15 +23,17 @@ export default {
         }
     ],
     plugins: [
+        external(),
+        resolve(),
         commonjs(),
+        typescript(),
         babel({
             babelHelpers: 'bundled',
             exclude: 'node_modules/**',
         }),
-        external(),
-        resolve(),
-        typescript({tsconfig: './tsconfig.json'}),
-        postcss(),
+        postcss({
+            modules: true,
+        }),
         terser(),
     ]
 }
