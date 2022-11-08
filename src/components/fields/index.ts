@@ -1,0 +1,1 @@
+export { SchemaConfig as InputSchema } from "./Input/Input"
